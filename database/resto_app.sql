@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2023 at 09:47 AM
+-- Generation Time: Feb 28, 2023 at 09:54 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -113,7 +113,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `is_admin`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'adminofficial@bprrb.com', '2023-02-28 01:45:56', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 'PD1nUriOW6', '2023-02-28 01:45:56', '2023-02-28 01:45:56');
+(1, 'Admin', 'adminofficial@bprrb.com', '2023-02-28 01:50:22', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, 'sxb8fqhX4C', '2023-02-28 01:50:22', '2023-02-28 01:50:22'),
+(2, 'Dandi Hermawan', 'dandihermawan@bprrb.com', '2023-02-28 01:52:10', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 'BXeeJw8HxsvQWAB3WVl4Y55WhwDZljZmQiE5MCpNi1O24CowFopWC8gbSvvg', '2023-02-28 01:52:10', '2023-02-28 01:52:10');
 
 --
 -- Indexes for dumped tables
@@ -179,7 +180,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
