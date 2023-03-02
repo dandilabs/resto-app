@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\ReservationController;
+use App\Http\Controllers\Admin\TableController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +29,10 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth','admin')->group(function () {
     Route::get('/admin', [AdminController::class,'index'])->name('admin.index');
+    Route::resource('/admin/categories', CategoryController::class);
+    Route::resource('/admin/menus', MenuController::class);
+    Route::resource('/admin/tables', TableController::class);
+    Route::resource('/admin/reservation', ReservationController::class);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
